@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
+    <title>About Us | JP Café</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #320001;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 150px;
+        padding: 1.5rem;
+        background-position: center;
+        background-color: ghostwhite;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div:last-child {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .logo > img {
+        height: 70px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .back a {
+        text-decoration: none;
+        gap: .3rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     @media screen and (max-width: 600px) {
+        header {
+            align-items: center;
+        }
+
+        header div:last-child {
+            display: none;
+        }
+     }
+
+
+    /*  */
+
+    main {
+        padding-top: 2rem;
+        max-width: 850px;
+        margin: auto;
+        padding-inline: 1rem;
+    }
+
+    main h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    main p {
+        margin-top: 2rem;
+        line-height: 1.2;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .qoute {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qoute > i {
+        background-color: ghostwhite;
+        position: relative;
+        padding: .5rem .9rem;
+        text-align: center;
+
+    }
+
+    .qoute > i::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #fb6503;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+    }
+
+    main p:nth-child(3) {
+        text-indent: 1.2rem;
+    }
+
+    main p:last-child {
+        text-indent: 1.2rem;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: rgba(248, 248, 255, 0.527);
+        min-height: auto;
+        width: 100%;
+        padding-top: 2rem;
+        margin-top: 5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .footer-container > * {
+        height: auto;
+        width: auto;
+    }
+
+    .footer-container h4 {
+        font-size: 1rem;
+    }
+
+
+    /* logo */
+    .footer-logo {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo > img {
+        height: 100px;
+        position: relative;
+    }
+
+
+
+
+    /* opening hours */
+    .opening-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .date > *, .hours > * {
+        margin-top: .2rem;
+    }
+
+    .date > p, .hours > p {
+        text-wrap: nowrap;
+        font-size: .9rem;
+    }
+
+
+    /* quick links */
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+    .quick-links > a {
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    .quick-links > a:hover {
+        color:  #fb6503;
+    }
+
+
+    /* subscribe */
+    .subscribe {
+        width: 307px;
+    }   
+
+    .subscribe > p {
+        font-size: .9rem;
+    }
+
+    #subscribe-form {
+        display: flex;
+        justify-content: flex-start;    
+        margin-top: .8rem;
+        font-size: .9rem;
+    }
+
+    #subscribe-form > input {
+        padding: .5rem;
+        font-size: .9rem;
+        border: 2px solid #320001;
+        border-right: none;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+
+    }
+
+    #subscribe-form > input:focus {
+        border: 2px solid #fb6503;
+        border-right: none;
+    }
+
+    #subscribe-form > a {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        border: .2rem solid #320001;
+        color: #443;
+        
+    }
+
+    #subscribe-form > a:hover {
+        background-color: #fb6503;
+        color: white;
+        border-color: #fb6503;
+    }
+
+
+    .contact {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width: 1422px) {
+        .footer-logo {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1422px) {
+        
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="back"><a href="./#about"><span class="material-symbols-outlined">arrow_back_ios_new</span>HOME</a></div>
+        <div class="logo"><img src="./img/logo1.png" alt=""></div>
+        <div></div>
+    </header>
+
+    <main>
+        <h1>ABOUT US</h1>
+
+        <p class="qoute"><i>Welcome to JP Café: Where Every Sip Tells a Story</i></p>
+
+        <p>JP Café isn't just a coffee shop; it's a haven for those seeking a delightful escape from the ordinary. It's a place where the aroma of freshly brewed coffee intertwines with the warmth of genuine connections, creating an atmosphere that feels like a second home.</p>
+
+        <p> <b>Our Mission - </b>At JP Café, our mission is to craft memorable experiences through exceptional coffee, warm hospitality, and a commitment to community. We strive to be a place where people can pause, connect, and savor the simple joys of life, one sip at a time.
+        </p>
+
+        <p><b>Our Vision - </b>Our vision extends beyond being a coffee destination; we aspire to be a cultural hub where creativity, conversation, and community thrive. JP Café envisions a future where every cup of coffee serves as a bridge connecting people, cultures, and stories.
+        </p>
+
+        <p><b>Our Goals - </b>Our goals at JP Café are intricately woven into the fabric of our mission and vision. We aspire to create exceptional experiences for our customers, ensuring that every visit is marked by moments of delight and connection. Community engagement and sustainability practices are at the forefront of our commitments, as we actively contribute to and positively impact the local neighborhoods we serve. Striving to be a vibrant cultural hub, we host events that celebrate diversity, inclusivity, and the arts, fostering creativity and meaningful connections. With a keen focus on innovation, we aim to advance not only our coffee offerings but also the technological enhancements that elevate the JP Café experience. Quality assurance, employee well-being, customer satisfaction, and seamless technology integration collectively define our journey toward creating a space where the perfect blend of coffee and camaraderie is not just a goal but a lived reality.</p>
+
+        <p><b>Our Coffee - </b >We take pride in curating the finest coffee beans from around the world. Each cup at JP Café is a result of Jegrick's passion for sourcing and roasting beans that embody the richness of flavor and the spirit of authenticity. From the first sip to the last, our coffee is a journey of taste and quality.</p>
+
+        <p><b>Our Food - </b>Beyond our exceptional coffee, JP Café offers a delectable array of handcrafted food that complements the richness of our beverages. With love and attention to detail, our menu features a blend of international flavors and local favorites, designed to satisfy every palate, whether you're here for a quick bite or a leisurely meal.</p>
+
+        <p><b>Our Space - </b>Step into JP Café, and you'll find a space designed for comfort, creativity, and connection. Jurriel's touch is evident in the welcoming ambiance that encourages meaningful conversations and shared moments. Our Café is more than just a place to grab a cup of coffee; it's a canvas for friendships to flourish and memories to unfold.</p>
+
+        <p><b>Our Commitments - </b>At JP Café, we are committed to sustainability, both in our sourcing practices and our impact on the environment. We strive to minimize our carbon footprint, support local communities, and ensure that every aspect of our operation reflects our dedication to responsible business practices.</p>
+
+        <p><b>Our Story - </b>Founded by Jegrick, Jurriel, and Patrick, our journey began with a shared passion for creating a unique and enriching coffee experience that transcends the ordinary. Jegrick's pursuit of excellence in sourcing and roasting, Jurriel's commitment to a warm and inviting atmosphere, and Patrick's innovative touch have converged to make JP Café a haven for coffee enthusiasts and social beings alike.</p>
+
+        <p>Join us at JP Café, where Jegrick's curated beans, Jurriel's warm hospitality, and Patrick's technological innovation converge to create an experience that goes beyond the ordinary. Every visit is a chapter in the story of JP Café, and we invite you to be a part of it. Cheers to the perfect blend of coffee and camaraderie!</p>
+
+    </main>
+
+      <footer>
+    <div class="footer-container">
+      <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+      <div class="opening">
+        <h4>OPENING HOURS</h4>
+        <div class="opening-container">
+          <div class="date">
+            <p>MONDAY ••••••••••</p>
+            <p>TUESDAY ••••••••••</p>
+            <p>WEDNESDAY ••••••</p>
+            <p>THURSDAY ••••••••</p>
+            <p>FRIDAY ••••••••••••</p>
+            <p>SATURDAY ••••••••</p>
+            <p>SUNDAY •••••••••••</p>
+          </div>
+          <div class="hours">
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>10:00 AM – 5:00 PM</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="quick-links">
+        <h4>QUICK LINKS</h4>
+        <a href="./#home">Home</a>
+        <a href="./#about">About</a>
+        <a href="./#menu">Menu</a>
+        <a href="./#gallery">Gallery</a>
+        <a href="./#team">Team</a>
+      </div>
+      
+      <div class="subscribe">
+        <h4>NEWSLETTER</h4>
+        <P>Stay updated for exclusive updates and flavorful surprises.</P>
+        <form action="#" id="subscribe-form">
+          <input type="email" placeholder="Email">
+          <a class="btn subscribeBtn" href="">SUBSCRIBE</a>
+        </form>
+      </div>
+    </div>
+
+    <p class="copyright">© 2024 JP Café. All Rights Reserved.</p>
+  </footer>
+    
+</body>
+</html>

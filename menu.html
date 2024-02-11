@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
+    <title>Menu | JP Café</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #320001;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 150px;
+        background-color: ghostwhite;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    header div:last-child {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .logo > img {
+        height: 70px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .back a {
+        text-decoration: none;
+        gap: .3rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 600px) {
+        header {
+            align-items: center;
+        }
+
+        header div:last-child {
+            display: none;
+        }
+     }
+
+     /*  */
+
+    .download-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: -1rem;
+        
+    }
+
+    .download-menu > a {
+        background-color: #fb6503;
+        padding:.8rem 2rem;
+        font-size: .8rem;
+        color: white;
+        text-decoration: none;  
+        border-radius: 5px;
+    }
+
+    .download-menu > a > i {
+        color: white;
+        margin-left: .5rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .download-menu {
+            margin-top: 1rem;
+            gap: .5rem;
+            flex-direction: column;
+        }
+    }
+
+    section {
+        margin-top: 2rem;
+    }
+
+
+    section h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .coffee, .frappe {
+        max-width: 900px;
+        margin-inline: auto;
+        margin-top: 5rem;
+    }
+
+    .coffee-row, .frappe-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center ;
+
+    }
+    
+    .coffee-col, .frappe-col {
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        margin-inline: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .coffee-col > div, .frappe-col > div  {
+        height: 100px;
+        overflow: hidden;
+ 
+    }
+
+    .coffee-col img, .frappe-col img {
+        position: relative;
+        height: 100%;
+    }
+
+    .coffee1 > img {
+        top: 5%;
+        left: 3%;
+        height: 95%;
+    }
+
+    .coffee2 > img {
+        height: 70%;
+        top: 15%;
+        left: 3%;
+    }
+
+    .coffee3 > img {
+        height: 120%;
+        bottom: 9%;
+    }
+
+    .coffee4 > img {
+        height: 90%;
+        top: 6%;
+    }
+
+    .coffee5 > img  {
+        top: 4%;
+    }
+
+    .coffee6 > img {
+        height: 93%;
+        top: 8%;
+    }
+
+    .coffee10 > img {
+        height: 110%;
+        bottom: 8%;
+    }
+
+    .coffee11 > img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .coffee12 > img {
+        height: 120%;
+        bottom: 15%;
+    }
+
+    .frappe1 > img {
+        height: 95%;
+        bottom: -16%;
+        left: -7%;
+    }
+
+    .frappe2 > img {
+        height: 85%;
+        top: 14%;
+    }
+
+    .frappe3 > img {
+        height: 85%;
+        top: 10%;
+    }   
+
+    .frappe4 > img {
+        height: 85%;
+        top: 9%;
+    }   
+
+    .frappe5 > img {
+        height: 90%;
+        top: 6%;
+    }   
+
+    .frappe6 > img {
+        height: 100%;
+    }   
+
+    .frappe7 > img {
+        height: 95%;
+        top: 6%;
+    }   
+
+    .frappe8 > img {
+        height: 90%;
+        top: 5%;
+    }   
+
+    .frappe9 > img {
+        height: 90%;
+        top: 10%;
+    }   
+
+    .frappe10 > img {
+        height: 90%;
+        top: 8%;
+    }   
+
+    .frappe13 > img {
+        height: 95%;
+        top: 5%;
+    }   
+
+    
+
+    .smoothies, .milkshakes, .teas, .juices {
+        margin-inline: auto;
+        max-width: 450px;
+    }
+
+    .smoothie, .milkshake {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .tea, .juice {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    .drinks-con {
+        display: flex;
+        justify-content: center; 
+        gap: 7rem;
+        padding: 2rem;
+    }
+
+
+    .drinks {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    .food-con {
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-row1{
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .drinks-con {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .food-row1 {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .teas, .juices {
+            margin-top: 3rem;
+        }
+    }
+
+    .breakfasts, .sandwiches {
+        max-width: 480px;
+    }
+
+    .breakfast, .sandwich {
+        display: flex;
+        gap: 3rem;
+        margin-bottom: .5rem;
+    } 
+
+     .food-row2, .food-row3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .waffles {
+        width: 1100px;
+        margin-inline: 1rem;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+   
+    .waffles-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .waffle {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    .salads {
+        width: 1100px;
+        margin-inline: 1rem;
+    }
+
+    .salad {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    @media screen and (max-width: 589px) {
+        .waffles-images {
+            justify-content: space-around;
+        }
+
+        .waffles-images img {
+            width: 150px;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 400px) {
+        .waffles-images img {
+            width: 100px;
+        }
+
+    }
+    
+
+     /* FOOTER */
+    footer {
+        background-color: rgba(248, 248, 255, 0.527);
+        min-height: auto;
+        width: 100%;
+        padding-top: 2rem;
+        margin-top: 5rem;
+        font-family: 'Poppins';
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .footer-container > * {
+        height: auto;
+        width: auto;
+    }
+
+    .footer-container h4 {
+        font-size: 1rem;
+    }
+
+
+    /* logo */
+    .footer-logo {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo > img {
+        height: 100px;
+        position: relative;
+    }
+
+
+
+
+    /* opening hours */
+    .opening-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .date > *, .hours > * {
+        margin-top: .2rem;
+    }
+
+    .date > p, .hours > p {
+        text-wrap: nowrap;
+        font-size: .9rem;
+    }
+
+
+    /* quick links */
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+    .quick-links > a {
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    .quick-links > a:hover {
+        color:  #fb6503;
+    }
+
+
+    /* subscribe */
+    .subscribe {
+        width: 307px;
+    }   
+
+    .subscribe > p {
+        font-size: .9rem;
+    }
+
+    #subscribe-form {
+        display: flex;
+        justify-content: flex-start;    
+        margin-top: .8rem;
+        font-size: .9rem;
+    }
+
+    #subscribe-form > input {
+        padding: .5rem;
+        font-size: .9rem;
+        border: 2px solid #320001;
+        border-right: none;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+
+    }
+
+    #subscribe-form > input:focus {
+        border: 2px solid #fb6503;
+        border-right: none;
+    }
+
+    #subscribe-form > a {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        border: .2rem solid #320001;
+        color: #443;
+        
+    }
+
+    #subscribe-form > a:hover {
+        background-color: #fb6503;
+        color: white;
+        border-color: #fb6503;
+    }
+
+
+    .contact {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width: 1422px) {
+        .footer-logo {
+            display: none;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="back"><a href="./#menu"><span class="material-symbols-outlined">arrow_back_ios_new</span>HOME</a></div>
+        <div class="logo"><img src="./img/logo1.png" alt=""></div>
+        <div></div>
+    </header>
+
+    <main>
+        <div class="download-menu">
+            <a href="img/JPCafe-FoodMenu.pdf" download="JPCafe-FoodMenu.pdf">OUR FOOD MENU <i class="fa-solid fa-download"></i></a>
+            <a href="img/JPCafe-DrinksMenu.pdf" download="JPCafe-DrinksMenu.pdf">OUR DRINKS MENU <i class="fa-solid fa-download"></i></a>
+        </div>
+        <h1 style="text-align: center; font-size: 3rem; margin-top: 3rem;">DRINKS</h1>
+        <section class="coffee">
+            <h2>COFFEE</h2>
+
+            <div class="coffee-row">
+
+                <div class="coffee-col">
+                    <div class="coffee1"><img src="./img/menu/coffee/coffee1.png" alt=""></div>
+                    <p class="label">Aremicano</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee2"><img src="./img/menu/coffee/coffee2.png" alt=""></div>
+                    <p class="label">Coffee Latte</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee3"><img src="./img/menu/coffee/coffee3.png" alt=""></div>
+                    <p class="label">Cinnamon Cappucino</p>
+                </div>
+
+                
+                <div class="coffee-col">
+                    <div class="coffee4"><img src="./img/menu/coffee/coffee4.png" alt=""></div>
+                    <p class="label">Espresso</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee5"><img src="./img/menu/coffee/coffee5.png" alt=""></div>
+                    <p class="label">Cafe Shakerato</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee6"><img src="./img/menu/coffee/coffee6.png" alt=""></div>
+                    <p class="label">Long Black</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee7"><img src="./img/menu/coffee/coffee7.png" alt=""></div>
+                    <p class="label">Flat White</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee8"><img src="./img/menu/coffee/coffee8.png" alt=""></div>
+                    <p class="label">Mocha Coffee</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee9"><img src="./img/menu/coffee/coffee9.png" alt=""></div>
+                    <p class="label">Machiato Coffee</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee10"><img src="./img/menu/coffee/coffee10.png" alt=""></div>
+                    <p class="label">Chocolate Raspberry Cappuccino</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee11"><img src="./img/menu/coffee/coffee11.png" alt=""></div>
+                    <p class="label">Chocolate Raspberry Cappuccino</p>
+                </div>
+
+                <div class="coffee-col">
+                    <div class="coffee12"><img src="./img/menu/coffee/coffee12.png" alt=""></div>
+                    <p class="label">Cappuccino</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="frappe">
+            <h2>FRAPPÉ</h2>
+
+            <div class="frappe-row">
+                <div class="frappe-col">
+                    <div class="frappe1"><img src="./img/menu/frappe/frappe1.png" alt=""></div>
+                    <p class="label">Chocolate Caramel Delight</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe2"><img src="./img/menu/frappe/frappe2.png" alt=""></div>
+                    <p class="label">Pumpkin Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe3"><img src="./img/menu/frappe/frappe3.png" alt=""></div>
+                    <p class="label">White Chocolate Raspberry Truffle</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe4"><img src="./img/menu/frappe/frappe4.png" alt=""></div>
+                    <p class="label">Toasty Pumpkin Cocoa</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe5"><img src="./img/menu/frappe/frappe5.png" alt=""></div>
+                    <p class="label">Spiced Pumpkin Iced Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe6"><img src="./img/menu/frappe/frappe6.png" alt=""></div>
+                    <p class="label">Mint Cookie Crumble Frappé</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe7"><img src="./img/menu/frappe/frappe7.png" alt=""></div>
+                    <p class="label">Cocomint Mocha</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe8"><img src="./img/menu/frappe/frappe8.png" alt=""></div>
+                    <p class="label">Blackberry Crumble Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe9"><img src="./img/menu/frappe/frappe9.png" alt=""></div>
+                    <p class="label">Nuts n' Berries Steamer</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe10"><img src="./img/menu/frappe/frappe10.png" alt=""></div>
+                    <p class="label">Iced & Spiced Irish Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe11"><img src="./img/menu/frappe/frappe11.png" alt=""></div>
+                    <p class="label">Mighty Magnificent Mocha</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe12"><img src="./img/menu/frappe/frappe12.png" alt=""></div>
+                    <p class="label">Bejeweled Butterscotch Coffee</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe13"><img src="./img/menu/frappe/frappe13.png" alt=""></div>
+                    <p class="label">Mocha Borgia</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe14"><img src="./img/menu/frappe/frappe14.png" alt=""></div>
+                    <p class="label">Black & White Mocha</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe15"><img src="./img/menu/frappe/frappe15.png" alt=""></div>
+                    <p class="label">Raspberry Mocha - Lite</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe16"><img src="./img/menu/frappe/frappe16.png" alt=""></div>
+                    <p class="label">Honey Maple Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe17"><img src="./img/menu/frappe/frappe17.png" alt=""></div>
+                    <p class="label">Strawberry Dipped Mocha</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="drinks-con">
+
+        <div class="drinks">
+            <section class="smoothies">
+            <h2>SMOOTHIES</h2>
+            <div class="smoothie">
+                <div>
+                    <h4>Tropical Smoothie</h4>
+                    <i>Banana, Mango, Pineapple blended with Moringa, topped with Chia Seeds</i>
+                </div>
+                <p>175</p>
+            </div>
+
+            <div class="smoothie">
+                <div>
+                    <h4>Mango & Goji Berry Smoothie</h4>
+                    <i>Banana, Mango, Pineapple blended with Bareley Grass and Goji Berries, topped with Chia Seeds</i>
+                </div>
+                <p>175</p>
+            </div>
+
+            <div class="smoothie">
+                <div>
+                    <h4>Banana & Peanut Butter Smoothie</h4>
+                    <i>Banana & Peanut Butter blended with Dates, Oats & Soy Milk, topped with Chia Seeds</i>
+                </div>
+                <p>175</p>
+            </div>
+
+            <div class="smoothie">
+                <div>
+                    <h4>Coffee Smoothie </h4>
+                    <i>Double espresso, banana, cacao powder, milk and vanilla extract blended with ice</i>
+                </div>
+                <p>175</p>
+            </div>
+        </section>
+
+        
+        </section>
+
+        <section class="milkshakes">
+            <h2>DECADENT MILKSHAKES</h2>
+            
+            <div class="milkshake">
+                <div>
+                    <h4>Nutella & Oreo</h4>
+                    <i>Nutella, Oreo Cookies, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Banana & Peanut Butter</h4>
+                    <i>Banana, Peanut Butter, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>  
+
+            <div class="milkshake">
+                <div>
+                    <h4>Biscoff Cookie Cream</h4>
+                    <i>Biscoff Cookie Cream, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Matcha & Mint</h4>
+                    <i>Matcha, Mint, Vanilla Ice Cream & Milk topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Strawberry Cheesecake</h4>
+                    <i>Strawberries, Cream Cheese, Cookie, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+        </section>
+
+        </div>
+        
+        <div class="drinks">
+        <section class="teas">
+            <h2>TEA</h2>
+            
+            <div class="tea">
+                <h4>Assam Black Tea</h4>
+                <p>65</p>
+            </div>
+            
+            <div class="tea">
+                <h4>Jasmine Green Tea</h4>
+                <p>65</p>
+            </div>
+
+            <div class="tea">
+                <h4>Blue Butterfly Pea</h4>
+                <p>85</p>
+            </div>
+
+            <div class="tea">
+                <h4>Chamomile</h4>
+                <p>85</p>
+            </div>
+
+            <div class="tea">
+                <h4>Lavender</h4>
+                <p>85</p>
+            </div>
+
+            <div class="tea">
+                <h4>Hibiscus</h4>
+                <p>85</p>
+            </div>
+
+            <div class="tea">
+                <h4>Iced Tea</h4>
+                <p>85</p>
+            </div>
+
+            <div class="tea">
+                <h4>Matcha Tea</h4>
+                <p>130</p>
+            </div>
+
+            <div class="tea">
+                <h4>Matcha Latte</h4>
+                <p>150</p>
+            </div>
+
+
+
+
+        <section class="juices">
+            <h2>FRUIT JUICES & SHAKES</h2>
+            
+            <div class="juice">
+                <h4>Banana</h4>
+                <p> 120</p>
+            </div>
+
+            <div class="juice">
+                <h4>Banana Pineapple</h4>
+                <p> 125</p>
+            </div>
+
+            <div class="juice">
+                <h4>Banana Strawberry</h4>
+                <p> 175</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango</h4>
+                <p> 130</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango Banana</h4>
+                <p> 135</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango Pineapple</h4>
+                <p> 135</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango Strawberry</h4>
+                <p> 185</p>
+            </div>
+
+             <div class="juice">
+                <h4>Mango Watermelon</h4>
+                <p> 135</p>
+            </div>
+            
+             <div class="juice">
+                <h4>Pineapple</h4>
+                <p>120</p>
+            </div>
+
+            <div class="juice">
+                <h4>Pineapple Mango Banana</h4>
+                <p>140</p>
+            </div>
+
+            <div class="juice">
+                <h4>Pineapple Strawberry</h4>
+                <p>175</p>
+            </div>
+            
+            <div class="juice">
+                <h4>Pineapple Watermelon</h4>
+                <p>125</p>
+            </div>
+
+            <div class="juice">
+                <h4>Watermelon</h4>
+                <p>120</p>
+            </div>
+
+
+
+        </section>
+            
+        </div>
+
+        </div>
+
+
+    <div class="food-con">
+        <h1 style="text-align: center; font-size: 3rem;">FOODS</h1>
+        <div class="food-row1">
+
+            <section class="breakfasts">
+            <h2>BREAKFAST</h2>
+                <div class="breakfast">
+                    <div>
+                        <h4>Choco-Banana Crepe</h4>
+                        <i>A thin and delicate crepe filled with sliced bananas, ice cream and nutella</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Mango Cream Crepe</h4>
+                        <i>Crepe filled with caramelized mango and cream cheese frosting, served with vanilla ice cream and walnuts</i>
+                    </div>
+                    <p>265</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Ham, Egg & Cheese Crepe</h4>
+                        <i>Crepe stuffed with ham, emmental cheese, sunny side up egg and Hollandaise sauce</i>
+                    </div>
+                    <p>265</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>French Toasts</h4>
+                        <i>Thick slices of bread soaked in custard and grilled, served with mango compote and walnut crumble</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Full Breakfast</h4>
+                        <i>Scrambled eggs, homemade bacon, sausage, toasted bread and breakfast potatoes</i>
+                    </div>
+                    <p>285</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Breakfast Tostadas</h4>
+                        <i>
+                        Two crispy tortillas topped with refried beans scrambled eggs, Pico de gallo, onion, tomato, lettuce and cheese. Add homemade bacon bits for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Silog</h4>
+                        <i>Choice of homemade bacon, sausage, chicken, or pork served with sunny side up egg and rice</i>
+                    </div>
+                    <p>225</p>
+                </div>
+
+            </section>
+
+
+            <section class="sandwiches">
+                
+                <h2>SANDWICHES</h2>
+                <div class="sandwich">
+                    <div>
+                        <h4>Egg & Cheese Wrap</h4>
+                        <i>Eggs & emmental cheese wrapped in a flatbread with tomato, lettuce and mayo. Add bacon for Php50</i>
+                    </div>
+                    <p>215</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Falafel Wrap</h4>
+                        <i>Falafel balls with tahini sauce, lettuce, tomato and onion wrapped in a flatbread</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Clubhouse Sandwich</h4>
+                        <i>A sandwhich of toasted bread, bacon, ham, egg. lettuce, tomato, and mayo. Add cheese for php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Ham Grilled Cheese</h4>
+                        <i>Buttered and toasted bread filled with sliced ham, emmental, and mozzarella cheese</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Crank Turkey, Brie & Cranberry Sauce</h4>
+                        <i>Roasted turkey slices, brie cheese & cranberry sauce served in a toasted baguette bread. Add homemade bacon for Php50</i>
+                    </div>
+                    <p>295</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Breakfast Tostadas</h4>
+                        <i>
+                        Two crispy tortillas topped with refried beans scrambled eggs, Pico de gallo, onion, tomato, lettuce and cheese. Add homemade bacon bits for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Ultimate Tuna Melt</h4>
+                        <i>Slices of toasted bread, tuna, and mayo with melty emmental and mozzarella cheese</i>
+                    </div>
+                    <p>215</p>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="food-row2">
+                 <fieldset class="waffles">
+              <legend style="text-align: center;"><h2>SWEET AND SAVORY WAFFLES</h2></legend>
+                <div class="waffles-images"><img src="img/waffle1.png" alt=""><img src="img/waffle2.png" alt=""></div>
+
+
+                <div class="waffle">
+                    <div>
+                        <h4>Waffle & Berries</h4>
+                        <i>Fluffy waffle topped with berries and homemade syrup. Add a scoop of vanilla ice cream for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="waffle">
+                    <div>
+                        <h4>Bananas Foster Mochi Waffle (Gluten Free)</h4>
+                        <i>Soft and chewy mochi waffle with caramelized bananas, buttery rum sauce, and whipped cream</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="waffle">
+                    <div>
+                        <h4>Cinnamon Roll Waffle</h4>
+                        <i>Crispy waffles infused with cinnamon and topped with cream cheese frosting</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="waffle">
+                    <div>
+                        <h4>Fried Chicken & Waffle</h4>
+                        <i>Crispy fried chicken served on a fluffy waffle with maple butter cream</i>
+                    </div>
+                    <p>295</p>
+                </div>
+
+                 <div class="waffle">
+                    <div>
+                        <h4>Smooth Cafe's Eggs Benedict Waffle</h4>
+                        <i>Perfectly poached eggs on a fluffy waffle with arugula, homemade bacon, and Hollandaise sauce</i>
+                    </div>
+                    <p>295</p>
+                </div>  
+            </fieldset>
+
+        </div>
+
+        <div class="food-row3">
+            <section class="salads">
+                <h2>SALADS</h2>
+
+                <div class="salad">
+                    <div>
+                        <h4>Garden Salad</h4>
+                        <i>Mixed lettuce, carrots, cucumbers, tomatoes, beetroots, red onions, arugula, orange carpels, raisins, olives, walnuts & balsamic dressing</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+                <div class="salad">
+                    <div>
+                        <h4>Ceasar Salad</h4>
+                        <i>Romaine lettuce and croutons tossed in a creamy dressing made with eggs, olive oil, lemon, parmesan, worcestershire sauce, anchovies, and bacon bits</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+
+                <div class="salad">
+                    <div>
+                        <h4>Mango Salad</h4>
+                        <i>Mixed lettuce, black olives, tomatoes, cucumbers, slices of mango & balsamic vinaigrette</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+                <div class="salad">
+                    <div>
+                        <h4>Tri-Color Quinoa Salad</h4>
+                        <i>Bowl of tri-color quinoa served with tomatoes, cucumbers, red onions, mango, raisins, almonds & salad dressing</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+            </section>
+        </div>
+    </div>
+
+        
+
+        
+
+        
+
+    </main>
+
+    <footer>
+    <div class="footer-container">
+      <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+      <div class="opening">
+        <h4>OPENING HOURS</h4>
+        <div class="opening-container">
+          <div class="date">
+            <p>MONDAY ••••••••••</p>
+            <p>TUESDAY ••••••••••</p>
+            <p>WEDNESDAY ••••••</p>
+            <p>THURSDAY ••••••••</p>
+            <p>FRIDAY ••••••••••••</p>
+            <p>SATURDAY ••••••••</p>
+            <p>SUNDAY •••••••••••</p>
+          </div>
+          <div class="hours">
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>9:00 AM – 5:00 PM</p>
+            <p>10:00 AM – 5:00 PM</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="quick-links">
+        <h4>QUICK LINKS</h4>
+        <a href="./#home">Home</a>
+        <a href="./#about">About</a>
+        <a href="./#menu">Menu</a>
+        <a href="./#gallery">Gallery</a>
+        <a href="./#team">Team</a>
+      </div>
+      
+      <div class="subscribe">
+        <h4>NEWSLETTER</h4>
+        <P>Stay updated for exclusive updates and flavorful surprises.</P>
+        <form action="#" id="subscribe-form">
+          <input type="email" placeholder="Email">
+          <a class="btn subscribeBtn" href="">SUBSCRIBE</a>
+        </form>
+      </div>
+    </div>
+
+    <p class="copyright">© 2024 JP Café. All Rights Reserved.</p>
+  </footer>
+
+    
+</body>
+</html>
